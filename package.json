@@ -1,0 +1,22 @@
+{
+  "name": "express-api",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "prisma": "^6.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}
