@@ -1,7 +1,7 @@
 import express, { Application } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import testRoutes from "./v1/routes/test.route";
+
 import tasksRoutes from "./v1/routes/tasks.route";
 
 dotenv.config();
@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes V1
-app.use("/api/v1", testRoutes, tasksRoutes);
+app.use("/api/v1", tasksRoutes);
 
 const PORT = process.env.PORT || 8000;
 
