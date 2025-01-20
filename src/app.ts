@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes V1
-app.use("/api/v1", tasksRoutes);
+app.use("/api/v1/tasks", tasksRoutes);
 
 const PORT = process.env.PORT || 8000;
 
