@@ -1,4 +1,5 @@
 import express, { Application } from "express";
+import cors from "cors";
 import dotenv from "dotenv";
 import testRoutes from "./v1/routes/test.route";
 import tasksRoutes from "./v1/routes/tasks.route";
@@ -8,6 +9,7 @@ dotenv.config();
 const app: Application = express();
 
 // Middleware
+app.use(cors());
 app.use(express.json());
 
 // Routes V1
